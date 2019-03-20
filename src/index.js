@@ -1,14 +1,11 @@
-import { yan } from './test.js';
+export function pipe(...fns) {
+    return function (...args) {
+        return fns.reduce((prev, fn) => fn(...[].concat(prev)), args);
+    };
+}
 
-import yan2 from './test.js';
-
-console.log(yan);
-console.log(yan2);
-
-var a = 1 + 1;
-var b = a;
-console.log(a);
-console.log(b);
-
-export const name = 'base';
-
+export function compose(...fns) {
+    return function (...args) {
+        return fns.reduceRight((prev, fn) => fn(...[].concat(prev)), args);
+    };
+}

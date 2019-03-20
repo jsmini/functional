@@ -1,24 +1,44 @@
 # 文档
-这是一个xxx库，有xxx功能
+一组函数式编程工具函数
 
-## api模版
-函数简单介绍
+## pipe
+将传入的函数串起来依次执行
 
-函数详细介绍
+- param {function} 待串行的函数，最好为2个
+- return {function} 函数
 
-函数参数和返回值（要遵守下面的例子的规则）
-
-- param {string} name1 name1描述
-- param {number} [name2] name2描述 ([]代表可选参数)
-- param {string|number} name3 name3描述 (| 代表多种类型)
-- param {*} name3 name3描述 (*代表任意类型)
-- param {boolean} obj.sex 复合参数定义
-- return {string} 返回值描述
-
-举个例子（要包含代码用例）
+举个例子：
 
 ```js
-// 代码
+function a(x) {
+    return x + 10
+}
+
+function b(x) {
+    return x * 10;
+}
+
+pipe(a, b)(10); // b(a(10)) = 200
+pipe(b, a)(10); // a(b(10)) = 110
 ```
 
-特殊说明，比如特殊情况下会报错等
+## compose
+将传入的函数先反转，再串起来依次执行
+
+- param {function} 待串行的函数，最好为2个
+- return {function} 函数
+
+举个例子：
+
+```js
+function a(x) {
+    return x + 10
+}
+
+function b(x) {
+    return x * 10;
+}
+
+compose(a, b)(10); // a(b(10)) = 110
+compose(b, a)(10); // b(a(10)) = 200
+```
