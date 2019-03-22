@@ -1,4 +1,4 @@
-import { type } from '@utiljs/type';
+import { type } from '@jsmini/type';
 
 export function pipe(...fns) {
     return function (...args) {
@@ -13,6 +13,16 @@ export function compose(...fns) {
 }
 
 export function curry(func, len = func.length) {
+    if (type(func) !== 'function') {
+        throw new TypeError('curry first param must be a function');
+    }
+
+    len = Math.ceil(len);
+
+    if (isNaN(len)) {
+        throw new TypeError('curry second param must be a number');
+    }
+
     function partial(func, argsList, argsLen) {
         if (argsList.length >= argsLen) {
             return func.apply(this, argsList);
@@ -20,13 +30,23 @@ export function curry(func, len = func.length) {
 
         return function (...args) {
             return partial.call(this, func, argsList.concat(args), argsLen);
-        }
+        };
     }
 
     return partial(func, [], len);
 }
 
 export function curryRight(func, len = func.length) {
+    if (type(func) !== 'function') {
+        throw new TypeError('curryRight first param must be a function');
+    }
+
+    len = Math.ceil(len);
+
+    if (isNaN(len)) {
+        throw new TypeError('curryRight second param must be a number');
+    }
+    
     function partial(func, argsList, argsLen) {
         if (argsList.length >= argsLen) {
             return func.apply(this, argsList);
@@ -34,7 +54,7 @@ export function curryRight(func, len = func.length) {
 
         return function (...args) {
             return partial.call(this, func, args.concat(argsList), argsLen);
-        }
+        };
     }
 
     return partial(func, [], len);
@@ -58,7 +78,7 @@ export function debounce(func, time = 0) {
         tid = setTimeout(() => {
             func.apply(this, args);
         }, time);
-    }
+    };
 }
 
 export function throttle(func, time = 0) {
@@ -78,16 +98,17 @@ export function throttle(func, time = 0) {
     return function throttled(...args) {
         const nowtime = (new Date).getTime();
 
+        clearTimeout(tid);
+
         if (nowtime - lasttime >= time) {
             lasttime = nowtime;
             func.apply(this, args);
             return;
         }
 
-        clearTimeout(tid);
         tid = setTimeout(() => {
             lasttime = (new Date).getTime();
             func.apply(this, args);
         }, time - (nowtime - lasttime));
-    }
+    };
 }
