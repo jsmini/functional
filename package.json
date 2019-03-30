@@ -1,6 +1,6 @@
 {
   "name": "@jsmini/functional",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "一组函数式编程工具函数",
   "main": "dist/index.js",
   "jsnext:main": "dist/index.esm.js",

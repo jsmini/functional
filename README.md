@@ -3,7 +3,7 @@
 [![](https://img.shields.io/badge/Powered%20by-jslib%20functional-brightgreen.svg)](https://github.com/yanhaijing/jslib-functional)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsmini/functional/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/jsmini/functional.svg?branch=master)](https://travis-ci.org/jsmini/functional)
-[![npm](https://img.shields.io/badge/npm-0.2.0-orange.svg)](https://www.npmjs.com/package/@jsmini/functional)
+[![npm](https://img.shields.io/badge/npm-0.2.1-orange.svg)](https://www.npmjs.com/package/@jsmini/functional)
 [![NPM downloads](http://img.shields.io/npm/dm/@jsmini/functional.svg?style=flat-square)](http://www.npmtrends.com/@jsmini/functional)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/functional.svg)](http://isitmaintained.com/project/jsmini/functional "Percentage of issues still open")
 
@@ -15,8 +15,6 @@
 | IE   | CH   | FF   | SF   | OP   | IOS  | 安卓   | Node  |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- |
 | 6+   | 23+  | 4+   | 6+   | 10+  | 5+   | 2.3+ | 0.10+ |
-
-**注意：编译代码依赖ES5环境，对于ie6-8需要引入[es5-shim](http://github.com/es-shims/es5-shim/)才可以兼容，可以查看[demo/demo-global.html](../demo/demo-global.html)中的例子**
 
 ## 目录介绍
 
