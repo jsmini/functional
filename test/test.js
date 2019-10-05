@@ -1,11 +1,11 @@
 var expect = require('expect.js');
 
-var pipe = require('../dist/index.js').pipe;
-var compose = require('../dist/index.js').compose;
-var curry = require('../dist/index.js').curry;
-var curryRight = require('../dist/index.js').curryRight;
-var debounce = require('../dist/index.js').debounce;
-var throttle = require('../dist/index.js').throttle;
+var pipe = require('../src/index.js').pipe;
+var compose = require('../src/index.js').compose;
+var curry = require('../src/index.js').curry;
+var curryRight = require('../src/index.js').curryRight;
+var debounce = require('../src/index.js').debounce;
+var throttle = require('../src/index.js').throttle;
 
 describe('单元测试', function() {
     this.timeout(5000);
