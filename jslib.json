@@ -1,9 +1,9 @@
 {
-    "name": "functional",
-    "npmname": "@jsmini/functional",
-    "umdname": "jsmini_functional",
-    "username": "jsmini",
-    "type": "js",
-    "lang": "zh",
-    "version": "1.4.0"
+  "name": "functional",
+  "npmname": "@jsmini/functional",
+  "umdname": "jsmini_functional",
+  "username": "jsmini",
+  "type": "js",
+  "lang": "zh",
+  "version": "1.4.0"
 }

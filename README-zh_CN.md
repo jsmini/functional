@@ -1,23 +1,23 @@
-# [functional](https://github.com/jsmini/functional) 
+# [functional](https://github.com/jsmini/functional)
 
 [![](https://img.shields.io/badge/Powered%20by-jslib%20functional-brightgreen.svg)](https://github.com/yanhaijing/jslib-functional)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsmini/functional/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/jsmini/functional.svg?branch=master)](https://travis-ci.org/jsmini/functional)
-[![Coveralls](https://img.shields.io/coveralls/jsmini/functional.svg)](https://coveralls.io/github/jsmini/functional)
+[![CI](https://github.com/jsmini/functional/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/jsmini/functional/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/badge/npm-0.2.3-orange.svg)](https://www.npmjs.com/package/@jsmini/functional)
 [![NPM downloads](http://img.shields.io/npm/dm/@jsmini/functional.svg?style=flat-square)](http://www.npmtrends.com/@jsmini/functional)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/functional.svg)](http://isitmaintained.com/project/jsmini/functional "Percentage of issues still open")
+[![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/functional.svg)](http://isitmaintained.com/project/jsmini/functional 'Percentage of issues still open')
 
 一组函数式编程工具函数
 
 [English](./README.md) | 简体中文
 
 ## 兼容性
+
 单元测试保证支持如下环境：
 
-| IE   | CH   | FF   | SF   | OP   | IOS  | 安卓   | Node  |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----- |
-| 6+   | 23+  | 4+   | 6+   | 10+  | 5+   | 2.3+ | 0.10+ |
+| IE  | CH  | FF  | SF  | OP  | IOS | 安卓 | Node  |
+| --- | --- | --- | --- | --- | --- | ---- | ----- |
+| 6+  | 23+ | 4+  | 6+  | 10+ | 5+  | 2.3+ | 0.10+ |
 
 ## 目录介绍
 
@@ -33,6 +33,7 @@
 ```
 
 ## 如何使用
+
 通过npm下载安装代码
 
 ```bash
@@ -54,9 +55,12 @@ import { name } from '@jsmini/functional';
 如果你是requirejs环境
 
 ```js
-requirejs(['node_modules/@jsmini/functional/dist/index.aio.js'], function (jsmini_functional) {
+requirejs(
+  ['node_modules/@jsmini/functional/dist/index.aio.js'],
+  function (jsmini_functional) {
     var name = jsmini_functional.name;
-})
+  },
+);
 ```
 
 如果你是浏览器环境
@@ -65,14 +69,16 @@ requirejs(['node_modules/@jsmini/functional/dist/index.aio.js'], function (jsmin
 <script src="node_modules/@jsmini/functional/dist/index.aio.js"></script>
 
 <script>
-    var name = jsmini_functional.name;
+  var name = jsmini_functional.name;
 </script>
 ```
 
 ## 文档
+
 [API](https://github.com/jsmini/functional/blob/master/doc/api.md)
 
-## 贡献指南  ![PRs welcome](<https://img.shields.io/badge/PRs-welcome-brightgreen.svg>)
+## 贡献指南 ![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
 首次运行需要先安装依赖
 
 ```bash
@@ -115,12 +121,15 @@ $ npm run rename # 重命名命令
 ```
 
 ## 贡献者列表
+
 [contributors](https://github.com/jsmini/functional/graphs/contributors)
 
 ## 更新日志
+
 [CHANGELOG.md](https://github.com/jsmini/functional/blob/master/CHANGELOG.md)
 
 ## 计划列表
+
 [TODO.md](https://github.com/jsmini/functional/blob/master/TODO.md)
 
 ## 谁在使用
