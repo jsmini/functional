@@ -3,13 +3,11 @@
 [![](https://img.shields.io/badge/Powered%20by-jslib%20functional-brightgreen.svg)](https://github.com/yanhaijing/jslib-functional)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/jsmini/functional/blob/master/LICENSE)
 [![CI](https://github.com/jsmini/functional/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/jsmini/functional/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/badge/npm-0.2.3-orange.svg)](https://www.npmjs.com/package/@jsmini/functional)
+[![npm](https://img.shields.io/badge/npm-0.3.0-orange.svg)](https://www.npmjs.com/package/@jsmini/functional)
 [![NPM downloads](http://img.shields.io/npm/dm/@jsmini/functional.svg?style=flat-square)](http://www.npmtrends.com/@jsmini/functional)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/jsmini/functional.svg)](http://isitmaintained.com/project/jsmini/functional 'Percentage of issues still open')
 
-A utility library for JavaScript that provides support for usual functional API
-
-一组函数式编程工具函数
+A set of functional programming utility functions.
 
 English | [简体中文](./README-zh_CN.md)
 
